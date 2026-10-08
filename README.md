@@ -1,5 +1,7 @@
 # xvideo
 
+[![Tests](https://github.com/stefan-cambodia/xvideo/actions/workflows/tests.yml/badge.svg)](https://github.com/stefan-cambodia/xvideo/actions/workflows/tests.yml)
+
 Download the videos of **public** X (Twitter) posts from the command line.
 
 ```console
