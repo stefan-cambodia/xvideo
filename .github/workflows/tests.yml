@@ -39,17 +39,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        include:
-          # Every supported Python version on Linux...
-          - { os: ubuntu-latest, python-version: "3.11" }
-          - { os: ubuntu-latest, python-version: "3.12" }
-          - { os: ubuntu-latest, python-version: "3.13" }
-          - { os: ubuntu-latest, python-version: "3.14" }
-          # ...and the oldest and newest ones on macOS and Windows.
-          - { os: macos-latest, python-version: "3.11" }
-          - { os: macos-latest, python-version: "3.14" }
-          - { os: windows-latest, python-version: "3.11" }
-          - { os: windows-latest, python-version: "3.14" }
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python-version: ["3.11", "3.12", "3.13", "3.14"]
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
