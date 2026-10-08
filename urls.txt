@@ -1,0 +1,6 @@
+# One X (Twitter) post URL per line.
+# Empty lines and lines starting with '#' are ignored.
+#
+# Usage: xvideo --file urls.txt --output ./downloads
+
+https://x.com/KillaXBT/status/2107623471824138680
